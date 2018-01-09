@@ -1,0 +1,172 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  /* background-color: #9eca6b; */
+}
+
+/* STRUCTURE   */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 5px auto;
+}
+header {
+	/*was 100px*/
+	height: 70px;
+	padding: 0 15px;
+	
+}
+
+#corner {
+	height: 60px;
+	width: 120px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#content {
+	/*was 290px*/
+
+	width: 120px;
+	float: left;
+	padding: 5px 15px;
+}
+
+#middle {
+	/*was 294px*/
+	/*width: 444px;*/ /* Account for margins + border values */
+	 width: 532px;
+	float: left;
+	padding: 5px 15px;
+	/*margin: 0px 5px 5px 5px;*/
+}
+
+#sidebar {
+	/*was 270px*/
+	/*width: 290px;*/
+	width: 200px;
+	padding: 5px 20px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	
+	#corner {
+		width: 21%;
+		padding: 1% 4%;
+	}
+	#content {
+		/*Was 41%*/
+		width: 21%;
+		padding: 1% 4%;
+			
+	}
+	#middle {
+		/*was 41%*/
+		width: 61%;
+		padding: 1% 4%;
+		/*margin: 0px 0px 5px 5px;*/
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		/*padding: 1% 4%;*/
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		/*padding: 1% 4%;*/
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+ 
+	#header {
+		 
+		background-color: #0f43a9;
+	}
+	#corner {
+		width: auto;
+		float: none;
+		background-color: #416dcc;
+	}
+	
+	#content {
+		width: auto;
+		float: none;
+		background-color: #6599ff;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	corner {
+		height: auto;
+	}
+	header {
+	 
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+#corner {
+	background-color: #416dcc;
+}
+#content {
+
+	background-color: #6599ff;
+}
+#sidebar {
+	/*background: #f0efef;*/
+}
+#header {
+	background-color: #0f43a9;
+	
+}
+
+header, #corner, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+#pagewrap, header, #corner, #content, #middle, #sidebar, footer {
+	/*border: solid 1px #ccc;*/
+	/*border: solid 1px #ccc;*/
+}
