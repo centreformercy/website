@@ -651,16 +651,9 @@
 
     // add padding to the first element, if it exists
     if ($('nav.navbar').length) {
-        var navHeight = $('nav.navbar').height() + 40;
-        $('nav.navbar').closest('section').next().css('padding-top', navHeight + 'px');
+        var navHeight = $('nav.navbar').height();
+        $('.mbr-after-navbar.mbr-fullscreen').css('padding-top', navHeight + 'px');
     }
-	
-	$(window).smartresize(function() {
-		if ($('nav.navbar').length) {
-			var navHeight = $('nav.navbar').height() + 40;
-			$('nav.navbar').closest('section').next().css('padding-top', navHeight + 'px');
-		}
-	});
 
     function isIE() {
         var ua = window.navigator.userAgent;

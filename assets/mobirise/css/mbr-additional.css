@@ -8309,6 +8309,14 @@ body {
     width: 100% !important;
   }
 }
+.cid-qJENmyUZnY {
+  padding-top: 120px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-qJENmyUZnY .mbr-section-subtitle {
+  color: #767676;
+}
 .cid-qBFZXZM87D .navbar {
   padding: .5rem 0;
   background: #333333;
@@ -8695,7 +8703,7 @@ body {
   flex-basis: auto;
 }
 .cid-qJ1vm9Yizl {
-  padding-top: 75px;
+  padding-top: 0px;
   padding-bottom: 60px;
   background: #ffffff;
 }
