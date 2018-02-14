@@ -1,7 +1,11 @@
 {
   "settings": {
     "name": "CentreForMercy",
+<<<<<<< .mine
     "currentPage": "StValentine.html",
+=======
+    "currentPage": "index.html",
+>>>>>>> .theirs
     "versionFirst": "4.0.14",
     "uniqCompNum": 229,
     "versionPublish": "4.6.3",
