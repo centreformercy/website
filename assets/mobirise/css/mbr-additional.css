@@ -2212,6 +2212,27 @@ body {
   color: #232323;
   text-align: center;
 }
+.cid-qKms0R8VLL {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-qKms0R8VLL .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qKmrW1cczM {
+  padding-top: 0px;
+  padding-bottom: 60px;
+  background: #ffffff;
+}
+.cid-qKmrW1cczM .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-qKmrW1cczM .video-block {
+    width: 100% !important;
+  }
+}
 .cid-qJ6eeujToT {
   padding-top: 45px;
   padding-bottom: 45px;
