@@ -2933,6 +2933,9 @@ body {
 .cid-qMXiRteprx .team-item .item-caption {
   background: #efefef;
 }
+.cid-qMXiRteprx .item-name {
+  text-align: center;
+}
 .cid-qBFZXZM87D .navbar {
   padding: .5rem 0;
   background: #333333;
@@ -8220,6 +8223,14 @@ body {
   background-color: #ffffff;
 }
 .cid-qYRVmoDMCf .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-qYS0IFTOya {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+}
+.cid-qYS0IFTOya .mbr-section-subtitle {
   color: #767676;
 }
 .cid-qW9bEbptg5 {
