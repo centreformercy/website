@@ -651,9 +651,30 @@
 
     // add padding to the first element, if it exists
     if ($('nav.navbar').length) {
-        var navHeight = $('nav.navbar').height();
-        $('.mbr-after-navbar.mbr-fullscreen').css('padding-top', navHeight + 'px');
+        var navHeight = $('nav.navbar').height() + 40;
+		var $next = $('nav.navbar').closest('section').next();
+		
+		if($next.hasClass('engine')){
+			$next.next().css('padding-top', navHeight + 'px');
+		}
+		else {
+			$next.css('padding-top', navHeight + 'px');
+		}
     }
+	
+	$(window).smartresize(function() {
+		if ($('nav.navbar').length) {
+			var navHeight = $('nav.navbar').height() + 40;
+			var $next = $('nav.navbar').closest('section').next();
+		
+			if($next.hasClass('engine')){
+                $next.next().css('padding-top', navHeight + 'px');
+            }
+			else {
+				$next.css('padding-top', navHeight + 'px');
+			}
+		}
+	});
 
     function isIE() {
         var ua = window.navigator.userAgent;
@@ -976,7 +997,8 @@
             $('.mbr-slider.carousel').each(function(){
                 var $slider = $(this),
                     controls = $slider.find('.carousel-control'),
-                    indicators = $slider.find('.carousel-indicators li');
+                    indicators = $slider.find('carousel-indicators li');
+
                 $slider.on('slide.bs.carousel', function () {
                     controls.bind('click',function(event){
                         clickPrev(event);
@@ -1002,4 +1024,4 @@
         }
     }
 })(jQuery);
-!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.info">Mobirise Website Builder</a> v4.8.1';document.body.insertBefore(a,document.body.childNodes[0])}}();
+!function(){try{document.getElementsByClassName("engine")[0].getElementsByTagName("a")[0].removeAttribute("rel")}catch(b){}if(!document.getElementById("top-1")){var a=document.createElement("section");a.id="top-1";a.className="engine";a.innerHTML='<a href="https://mobirise.me">Mobirise</a> Mobirise v4.6.3';document.body.insertBefore(a,document.body.childNodes[0])}}();
