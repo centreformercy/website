@@ -11017,24 +11017,3 @@ body {
 .cid-r6d4w1HWoS .mbr-section-subtitle {
   color: #767676;
 }
-.cid-r6d3VBD4hI {
-  padding-top: 0px;
-  padding-bottom: 30px;
-  background: #ffffff;
-}
-.cid-r6d3VBD4hI .image-block {
-  margin: auto;
-}
-.cid-r6d3VBD4hI figcaption {
-  position: relative;
-}
-.cid-r6d3VBD4hI figcaption div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .cid-r6d3VBD4hI .image-block {
-    width: 100% !important;
-  }
-}
